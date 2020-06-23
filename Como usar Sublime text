@@ -1,0 +1,45 @@
+Como usar Sublime text
+
+1 - Uso do Menu Superior
+	====================
+	Project -> Add Folder to Project = Abre nova pasta de projeto
+
+
+
+2 - Teclas de Atalho
+	================
+	Criando atalhos: Preferences -> Key Bndings
+	- digite o atalho que se deseja seguindo os padrões... 
+	{"keys": ["shift+insert"], "command": "paste" }
+	
+	Crtl + n = Abre Novo Arquivo
+	Crtl + Shift + n = Abre Novo Arquivo em Nova Janela
+	Crtl + o = Abre Explorer para buscar e abrir arquivo existente
+
+	ctrl + p = "Vá para qualquer coisa"
+	ctrl + shift + p = Vai pra qualquer coisa mesmo .. até funções do sublime
+	ctrl + g = "Vá para uma linha do arquivo aberto"
+	ctrl + r = Navega pelas funções do arquivo aberto
+	ctrl + m = vai direto para a tag de fechamento da função
+	ctrl + f = busca simples (F3 ou enter navega entre o que foi encontrado, Shift + F3 ou Shift + enter retorna ao anterior)
+
+	Alt + F3 = Mult cursor um abaixo do outro
+	ctrl + Clicar numa linha = vai criando mult cursores em locais dispersos...
+	ctrl + z = desfaz alterações
+	ctrl + shift + z = refaz alterações
+	ctrl + d = vai selecionando e colocando mult cursores nas palavras iguais às que estiver em referencia.
+	ctrl + shift + f = busca em todos os documentos abertos
+	control + h = buscar/buscar todos - Replace/Replace all
+	ctrl + shift + e = a palavra de pesquisa se torna palavra de replace
+	ctrl + shift + h = replace last (trocar o proximo)
+	ctrl + shift + a = seleciona conteúdo das tags html
+	ctrl + l = seleção de linha.
+	ctrl + shift + d = copiar linha inteira
+	
+
+
+
+3 - Instalando plugins
+	==================
+	https://www.youtube.com/watch?v=mwW4812nBA4
+

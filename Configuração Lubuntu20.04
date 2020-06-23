@@ -1,0 +1,63 @@
+Travando o Kernel.
+
+->Inicio -> Preferências -> Addictional Drivers -> Updates -> Desabilite "Check Updates"
+Após isso as atualizações deverão ser através de apt update / apt upgrade.
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt autoremove
+sudo apt autoclean
+sudo apt clean
+
+lspci -vnn | grep Network
+iwconfig
+
+*****************************************************************************
+*
+* Em alguns casos particulares, após a instalação, firmware-b43-installer 
+* você precisa remover o módulo b43, habilitá-lo novamente e até  
+* mesmo desbloquear com o rfkill:
+*
+* sudo modprobe -r b43
+* sudo modprobe b43 --------->Fiz até aki    
+* sudo rfkill unblock all
+*
+* Observações:
+* Instalação placa wifi e tbelas de compatibilidade 
+* -- https://qastack.com.br/ubuntu/55868/installing-broadcom-wireless-drivers
+* 
+*****************************************************************************
+
+sudo update-pciids
+lspci -nn -d 14e4:
+sudo apt install firmware-b43-installer
+sudo modprobe -r b43
+reboot
+
+******************************************************************************
+*
+* Download Google Chrome: Linux .deb  x64 sudo apt autoclean
+* https://www.google.com/intl/pt-BR/chrome/
+*
+* Download Teams Microsoft Linux .deb x64
+* https://www.microsoft.com/pt-br/microsoft-365/microsoft-teams/download-app   
+* 
+* Download Skype for Linux funcionou perfeitamente instalado via SNAPD
+* sudo apt install snapd
+* sudo snap install skype --classic  
+* 
+******************************************************************************
+  
+dpkg -i google-chrome-stable_current_amd64.deb 
+sudo dpkg -i google-chrome-stable_current_amd64.deb 
+sudo dpkg -i teams_1.3.00.5153_amd64.deb 
+sudo apt install -f
+
+sudo apt install samba
+sudo su
+#nano /etc/samba/smb.conf
+#systemctl status smbd
+#systemctl restart smbd
+#testparm
+reboot
